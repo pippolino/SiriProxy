@@ -73,15 +73,15 @@ If you don't already have Ruby 2.0.0 (or at least 1.9.3) installed through RVM, 
  
 	`gem install siriproxy`
 
-2. Create `~/.siriproxy` directory
+2. Create `/etc/siriproxy` directory
 
-	`mkdir ~/.siriproxy`
+	`mkdir /etc/siriproxy`
 
 3. Generate Certificates
 
 	`siriproxy gencerts`
 
-4. Transfer certificate to your phone (it will be located at `~/.siriproxy/ca.pem`, email it to your phone)
+4. Transfer certificate to your phone (it will be located at `/etc/siriproxy/ca.pem`, email it to your phone)
 5. Start SiriProxy (`XXX.XXX.XXX.XXX` should be replaced with your server's IP address, e.g. `192.168.1.100`), `nobody` can be replaced with any un-privileged user.
 
 	`rvmsudo siriproxy server -d XXX.XXX.XXX.XXX -u nobody`

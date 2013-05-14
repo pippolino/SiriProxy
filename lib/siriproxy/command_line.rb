@@ -157,7 +157,7 @@ Options:
   private
   
   def parse_options
-    config_file = File.expand_path(File.join('~', '.siriproxy', 'config.yml'));
+    config_file = File.expand_path(File.join('/etc', 'siriproxy', 'config.yml'));
 
     unless File.exists?(config_file)
       default_config = config_file

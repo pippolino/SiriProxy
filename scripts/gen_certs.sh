@@ -17,7 +17,7 @@ emailAddress=""
 
 #You probably don't need to modify these unless you know what you're doing.
 SIRI_PROXY_ROOT=$1
-SIRI_PROXY_SETTINGS=~/.siriproxy
+SIRI_PROXY_SETTINGS=/etc/siriproxy
 LOG_FILE=$SIRI_PROXY_SETTINGS/cert.log
 TMP_DIR=/tmp
 TMP_CA_DIR=/tmp/siriCA #THIS ($dir) ALSO MUST BE MODIFIED IN openssl.cnf IF YOU CHANGE IT!
